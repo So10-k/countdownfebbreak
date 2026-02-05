@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="aurora" aria-hidden="true"></div>
-    <div class="stars" aria-hidden="true"></div>
-
     <main class="page">
       <header class="hero">
         <div class="hero__text">
@@ -55,37 +52,21 @@
       </header>
 
       <section class="countdown" aria-live="polite">
-        <div class="countdown__item" data-unit="days">
+        <div class="countdown__item">
+          <span class="countdown__value" id="days">0</span>
           <span class="countdown__label">Days</span>
-          <div class="flip-card" aria-label="Days remaining">
-            <span class="flip-card__face flip-card__face--front" id="days">0</span>
-            <span class="flip-card__face flip-card__face--back" aria-hidden="true">0</span>
-            <span class="flip-card__hinge" aria-hidden="true"></span>
-          </div>
         </div>
-        <div class="countdown__item" data-unit="hours">
+        <div class="countdown__item">
+          <span class="countdown__value" id="hours">0</span>
           <span class="countdown__label">Hours</span>
-          <div class="flip-card" aria-label="Hours remaining">
-            <span class="flip-card__face flip-card__face--front" id="hours">00</span>
-            <span class="flip-card__face flip-card__face--back" aria-hidden="true">00</span>
-            <span class="flip-card__hinge" aria-hidden="true"></span>
-          </div>
         </div>
-        <div class="countdown__item" data-unit="minutes">
+        <div class="countdown__item">
+          <span class="countdown__value" id="minutes">0</span>
           <span class="countdown__label">Minutes</span>
-          <div class="flip-card" aria-label="Minutes remaining">
-            <span class="flip-card__face flip-card__face--front" id="minutes">00</span>
-            <span class="flip-card__face flip-card__face--back" aria-hidden="true">00</span>
-            <span class="flip-card__hinge" aria-hidden="true"></span>
-          </div>
         </div>
-        <div class="countdown__item" data-unit="seconds">
+        <div class="countdown__item">
+          <span class="countdown__value" id="seconds">0</span>
           <span class="countdown__label">Seconds</span>
-          <div class="flip-card" aria-label="Seconds remaining">
-            <span class="flip-card__face flip-card__face--front" id="seconds">00</span>
-            <span class="flip-card__face flip-card__face--back" aria-hidden="true">00</span>
-            <span class="flip-card__hinge" aria-hidden="true"></span>
-          </div>
         </div>
       </section>
 
